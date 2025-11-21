@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Family Background{% endblock %}
+{% block content %}
+
+<div class="form-container">
+    <h2>Family Background</h2>
+
+    <form>
+        <label>Mother’s Full Name</label>
+        <input type="text">
+        <label>Mother’s Occupation</label>
+        <input type="text">
+
+        <label>Father’s Full Name</label>
+        <input type="text">
+        <label>Father’s Occupation</label>
+        <input type="text">
+
+        <h3>Siblings</h3>
+        <input type="text" placeholder="Sibling 1">
+        <input type="text" placeholder="Sibling 2">
+        <input type="text" placeholder="Sibling 3">
+
+        <button class="submit-btn">Save</button>
+    </form>
+</div>
+
+{% endblock %}

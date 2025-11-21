@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}Schedule{% endblock %}
+{% block content %}
+
+<div class="form-container">
+    <h2>Class Schedule</h2>
+
+    <form>
+        <div id="schedule-rows">
+
+            <div class="row schedule-entry">
+                <input type="text" placeholder="Subject">
+                <input type="text" placeholder="Day (Mon/Wed/Fri)">
+                <input type="text" placeholder="Room">
+                <input type="text" placeholder="Time (8AM-9AM)">
+                <input type="text" placeholder="Professor">
+            </div>
+
+        </div>
+
+        <button type="button" class="add-btn" onclick="addSchedule()">Add Another Subject</button>
+        <button class="submit-btn">Save</button>
+    </form>
+</div>
+
+<script>
+function addSchedule(){
+    const div = document.createElement("div");
+    div.classList.add("row", "schedule-entry");
+    div.innerHTML = `
+        <input type="text" placeholder="Subject">
+        <input type="text" placeholder="Day (Mon/Wed/Fri)">
+        <input type="text" placeholder="Room">
+        <input type="text" placeholder="Time (8AM-9AM)">
+        <input type="text" placeholder="Professor">
+    `;
+    document.getElementById("schedule-rows").appendChild(div);
+}
+</script>
+
+{% endblock %}

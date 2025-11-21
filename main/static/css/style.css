@@ -1,0 +1,102 @@
+/* GENERAL */
+body {
+    margin: 0;
+    padding: 0;
+    background: #f5f6fa;
+    font-family: Arial, sans-serif;
+}
+
+main.content-area {
+    padding: 20px;
+}
+
+/* HEADER */
+.main-header {
+    background: #1d1b40;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout-btn {
+    color: #1C113C;
+    text-decoration: none;
+    background: #F5EAEA;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+/* NAVIGATION TABS */
+.nav-tabs {
+    display: flex;
+    background: #2b285e;
+    padding: 10px;
+}
+
+.nav-tabs a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin-right: 5px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.nav-tabs a:hover,
+.nav-tabs a.active {
+    background: #625194;
+}
+
+/* FORM CONTAINER */
+.form-container {
+    background: white;
+    padding: 25px;
+    max-width: 700px;
+    margin: 25px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+/* INPUT FIELDS */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 18px 0;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+}
+
+/* BUTTONS */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #1d1b40;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.add-btn {
+    width: 100%;
+    padding: 12px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* SCHEDULE ROW */
+.row.schedule-entry {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
